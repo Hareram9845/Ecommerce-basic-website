@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+
+    <section>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <div id="feedback-box" style="display: none;">
+        <h2>Thank you for your purchase!</h2>
+        <label for="feedback">Leave a feedback:</label>
+        <textarea id="feedback"></textarea>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+        <div id="feedback-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
